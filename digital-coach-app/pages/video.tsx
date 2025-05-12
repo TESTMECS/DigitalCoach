@@ -70,6 +70,7 @@ export default function VideoPage() {
       );
       console.log(response.data);
       setAggregateScore(response.data.evaluation.aggregateScore);
+      console.log(response.data.evaluation.transcript);
     } catch (e) {}
   };
   useEffect(() => {
